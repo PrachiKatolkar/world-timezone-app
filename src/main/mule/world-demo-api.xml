@@ -14,6 +14,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="1bf04521-b328-42b8-9db1-1f4c6e8a6bdc" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
 		<http:request method="GET" doc:name="Request" doc:id="684a950f-ff51-4c74-8a00-d70a4811108f" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
+			
+			
 ---
 {
 	city : attributes.uriParams.city,
